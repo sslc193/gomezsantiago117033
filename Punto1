@@ -1,0 +1,8 @@
+# punto 1 (absoluto)
+##pra todos los numeros tambienlos decimales
+x=float(input("meta el numero"))
+if x>0:
+    print("el valor absoluto es ",x)   
+if x<0:
+    x2=-1*x
+    print("el valor aboluto de ",x," es ",x2)
