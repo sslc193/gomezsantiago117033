@@ -1,0 +1,5 @@
+# punto 2 (reveso)
+
+x=input("ponga un numero")
+y=x[::-1]
+print(y)
