@@ -1,0 +1,15 @@
+x=int(input('Ingrese un numero entero positivo: '))
+D=x
+suma= 0
+while x<0:
+    print("un numero positivo")
+    x=int(input('Ingrese un numero entero positivo: '))
+D=x
+suma= 0
+while x>0:
+    Dif = D % 10
+    D = (D  // 10)
+    if Dif % 2 == 0:
+        suma += Dif
+        if D == 0: break
+print('La suma de los digitos pares es',suma)
