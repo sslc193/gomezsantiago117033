@@ -1,0 +1,34 @@
+
+x=int(input('Ingrese un numero de tres cifras: '))
+if(-999<=x<=-100)or(100 <=x<= 999):
+    if x>0:
+        D1=x// 100  ##el centesimal el numero dividido en 100
+        D3=x %  10  ##el unitario queda el residuo el cual va de 1 a 10
+        D2=(x-(D1*100)-D3) //10 ##el decimal al numero se le resta el centesimal y el unitario
+    else:
+        x*=-1
+        D1=x// 100  ##el centesimal el numero dividido en 100
+        D3=x %  10  ##el unitario queda el residuo el cual va de 1 a 10
+        D2=(x-(D1*100)-D3) //10 ##el decimal al numero se le resta el centesimal y el unitario
+    if D1==8 or D2==8 or D3==8:
+        print("el numero ingresado si posee el 8")
+    else:
+        print("el numero ingresado no posee el 8")
+else:
+    print("el numero debe ser de 3 cifras")
+    x=int(input('Ingrese un numero de tres cifras: '))
+    print("muy demalas solo era un intento")
+    print("solo porque soy buena gente")
+    if x>0:
+        D1=x// 100  ##el centesimal el numero dividido en 100
+        D3=x %  10  ##el unitario queda el residuo el cual va de 1 a 10
+        D2=(x-(D1*100)-D3) //10 ##el decimal al numero se le resta el centesimal y el unitario
+    else:
+        x*=-1
+        D1=x// 100  ##el centesimal el numero dividido en 100
+        D3=x %  10  ##el unitario queda el residuo el cual va de 1 a 10
+        D2=(x-(D1*100)-D3) //10 ##el decimal al numero se le resta el centesimal y el unitario
+    if D1==8 or D2==8 or D3==8:
+        print("el numero ingresado si posee el 8")
+    else:
+        print("el numero ingresado no posee el 8")
