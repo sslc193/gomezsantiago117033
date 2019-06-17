@@ -15,22 +15,22 @@ while t < len(lista):
         print('La lista no está ordenada de forma ascendente')
         z=1
         break
-if z==0: ##continuo
+
+if z==0: #### continúa
     print('La lista se encuentra ordenada de forma ascendente')
-    
-    x=int(input('Ingrese un número: '))
+    x=float(input('Ingrese un número: '))
     k=0 
     while k < len(lista):
-        if x==lista[k]: ###existente
+        if x==lista[k]: ###esta repetido
             print('El número ya se encuentra en la lista')
             z=1
             break
-        elif x > lista[k]: ##donde ponerlo
+        elif x > lista[k]: ######ubicacion
             k+=1
         elif x < lista[k]: 
-            lista.change[k,x]
+            lista.insert(k,x)
             break
-        if x > lista[-1]: 
+        if x > lista[-1]: ####mas grande que todo
             lista.append(x)
             break
     if z== 0 : print('la nueva lista es:',lista)
