@@ -1,0 +1,6 @@
+x=input("Escriba una cadena:") # MAYÚSCULAS(65,90) # minúsculas(97,122)
+x2=""
+for i in range(len(x)):
+    y = chr(ord(x[i])-32)
+    x2= x2+y
+print(x2)
