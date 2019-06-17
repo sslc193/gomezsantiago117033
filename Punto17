@@ -1,0 +1,25 @@
+L=eval(input('Ingrese una lista, procure que los elementos de la lista'
+             ' sean del mismo tipo: '))
+print(L)
+i=0 
+may=L[0] #pone como elemento mayor al primero de la lista
+while i < len(L):
+    if may < L[i]: ###COMPARANDO EL COMPONENTE 1 ALOS OTROS 
+        may=L[i] 
+        i+=1
+    else: i+=1
+    
+while may in L: ###ELIMINA EL MASGRANDE
+    L.remove(may)
+
+t=0
+may1=L[0]
+while t < len(L): #vuelve a realizar el mismo procedimiento para buscar el 
+                  #mayor de la lista resultante, que es segundo mayor de la 
+                  #lista ingresada
+    if may1 < L[t]:
+        may1=L[t]
+        t+=1
+    else: t+=1 
+
+print('El segundo elemento más grande de la lista es:',may1)
