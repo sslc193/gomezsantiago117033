@@ -1,0 +1,11 @@
+#punto 12 ####cambiar
+#### prolblema con palabras que llevan tildes
+x=input("Escriba una palabra: ")
+y=input("Escriba otra: ")
+a=x.lower()
+b=y.lower()
+
+if a<b:
+    print(a,"está antes en el diccionario que",b)
+elif a>b:
+    print(b,"está antes en el diccionario que",a)
