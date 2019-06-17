@@ -1,0 +1,20 @@
+##punto 6
+###leer un numero y mirar si la suma es fibonacci
+x=int(input('Ingrese un numero entero : '))
+
+if  x< 0: 
+    x*= -1 ####convertir el numer a positivo para evaluar
+D=x
+Aux1=0
+b1 , b2 = 0 , 1###bases para el fibonacci
+while x>0:
+    Dif=D%10##se coge el termino mas alejado
+    Aux1+=Dif###va a ser el limite de la serie
+    D=D// 10###se quita el numero ya utilisado
+    if D == 0: break ###cuando llegue a 0 ya se opera
+while b1 < Aux1 :
+    b1,b2 = b2,(b1+b2)
+if b1=Aux1: 
+    print("si es fibonacci")
+else:
+    print("no es fibonacci")
