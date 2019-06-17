@@ -1,0 +1,26 @@
+#punto9
+##primero crear los 2 circulos
+x1=float(input('ingrese la ubicacion del centro en x para el 1 circulo'))
+y1=float(input('ingrese la ubicacion del centro en y para el 1 circulo'))
+r1=float(input('ingrese el radio desado para el 1 circulo'))
+x2=float(input('ingrese la ubicacion del centro en x para el 2 circulo'))
+y2=float(input('ingrese la ubicacion del centro en y para el 2 circulo'))
+r2=float(input('ingrese el radio desado para el 2 circulo'))
+
+a=float(input('ingrese la ubicacion en x del punto a buscar'))
+b=float(input('ingrese la ubicacion en y del punto a buscar'))
+##dada la ecuacion de un circulo 
+## x**2+y**2=r**2
+###dentro del circulo 1
+##(x-a)**2+(y-b)**2<=r**2
+if(x1-a)**2+(y1-b)**2<=r1**2:
+    print("el punto ab esta dentro del circulo 1")
+###dentro del circulo 2
+if(x2-a)**2+(y2-b)**2<=r2**2:
+    print("el punto ab esta dentro del circulo 2")
+###dentro de ambos circulos
+if((x1-a)**2+(y1-b)**2<=r1**2) and ((x2-a)**2+(y2-b)**2<=r2**2):
+    print("el punto ab esta dentro de los dos circulos")
+###fuera de ambos circulos
+if((x1-a)**2+(y1-b)**2>=r1**2) and ((x2-a)**2+(y2-b)**2>=r2**2):
+    print("el punto ab esta fuera de ambos circulos")
