@@ -1,0 +1,29 @@
+x=input("Escriba una cadena:")
+
+MAY=[] # Mayúsculas chr(65-90)
+Til=[] # Letras con tilde
+Num=[] # Dígitos chr(48-57)
+Esp=[] # Espacio chr(32)
+MT=len(MAY)+len(Til)
+for m in range(65,90):
+    for j in range(len(x)):
+        if x[j]==chr(m):
+            MAY.append(x[j])
+print("Total de letras en mayúscula: ",MT)
+
+for n in range(48,57): #Funciona
+    for i in range(len(x)):
+        if x[i]==chr(n):
+            Num.append(x[i])
+print("Total de dígitos: ",len(Num))
+
+tilde="ÁÉÍÓÚáéíóú"
+for k in range(len(x)):
+    if x[k] in tilde:
+        Til.append(x[k])
+print("Total de letras con tilde: ",len(Til))
+
+for e in range(len(x)): #Funciona
+    if x[e]==chr(32):
+        Esp.append(x[e])
+print("Total de espacios: ",len(Esp))
