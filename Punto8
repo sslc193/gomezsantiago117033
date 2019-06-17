@@ -1,0 +1,24 @@
+##punto8
+##multiplos 3 y del 4
+
+m3=[]
+m4=[]
+j=0
+
+for i in range (101):
+    c=i%3
+    if c==0:
+        m3.append(i)
+        j+=1
+        if j==15: break
+for i in range (101):
+    c=i%3
+    if c==0:
+        j+=1
+        if j>15:
+            r=(i)%4
+            if r==0:
+                m4.append(i)
+
+print("los primero 15 multiplos de 3 son ", m3)
+print("los primero 15 multiplos de 4 son ", m4)
