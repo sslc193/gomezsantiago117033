@@ -1,0 +1,13 @@
+#punto 14 
+
+x=input("Escriba una cadena de texto: ")
+y=x.lower()
+let=""
+let3 = ""
+for m in range(97,122):
+    for n in range(len(y)):
+        if y[n]==chr(m):
+            let = let + (y[n])
+let2=str(let)
+let3 = let3+(let2)
+print("Su cadena de texto ordenada alfabeticamente es: ",let3)
