@@ -1,0 +1,11 @@
+##leer una lista de numero
+
+x=eval(input("escriba una lista de numeros con la notacion de lista "))
+
+lis=[]###ñista vacia a la que se le van agrreagarlos numero repetidos 2 veces
+for i in range(min(x),max(x)+1):
+    if x.count(i) ==2: ####se esta denotando que esta exactamente 2 veces
+        lis.append(i)###se agraga el numero que esta exactamente 2 vecesa lis
+        print("el numero ",i,"esta exactamente 2 veces en la lista")
+if len(lis)==0:
+    print("papi no hay nueros repetidos exactamente 2 veces")
