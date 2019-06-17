@@ -1,0 +1,24 @@
+#punto7
+##mirar si en un numero hay digitos repetidos
+x=int(input('Ingrese un numero entero positivo: '))
+while x<0:
+    print(" es un numero positivo ")
+    x=int(input('Ingrese un numero entero positivo: '))
+D=x
+Aux = 0
+Digitos=[]##DONDE voy a meter los digitos que estan en el numero
+Un=[]##la cantidad de veces que estan
+while D>0:
+    Dif = D % 10##tomamos un numero para evaluar
+    D = (D  // 10)##quitamos el numero ya utilizado
+    Digitos.append(Dif,)
+for i in Digitos:
+    if i in Digitos: 
+        Veces = Digitos.count(i)##mirar cuantas veces esta el numero
+        if i not in Un:
+            Un.append(i,)
+    if (Digitos.count(i)) == 1:
+        print('El',i, 'solo se encuentra una vez.')
+    else:
+        print('El ',i,'se repite ', Veces,' veces')
+print(Digitos)
