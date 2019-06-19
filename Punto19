@@ -1,0 +1,29 @@
+while True:
+    try: 
+        L=eval(input('Ingrese una lista: '))
+        if type(L) == list:
+            for i in L:
+                if type(i) == int:
+                    continue
+                else: raise Exception
+            break
+        else: raise Exception
+    except Exception: print('El elemento ingresado debe ser una lista de\
+ numeros enteros')
+L.append(0)
+s = 0
+Lista_S = [[]]
+for i in range(0,len(L)-1):
+    if L[i] <= L[i+1]:
+        Lista_S[s].append(L[i])
+    else:
+        Lista_S[s].append(L[i])
+        s += 1
+        Lista_S.append([]) 
+LL=[]
+for i in Lista_S:
+    LL.append(len(i))   
+a= max(LL)
+while a in LL:
+    print(Lista_S.pop(LL.index(max(LL))), 'es la sublista ordenadaascendentemente más larga')
+    LL.pop(LL.index(max(LL)))
