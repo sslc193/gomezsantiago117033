@@ -1,0 +1,22 @@
+###punto20
+def lea_matriz():
+    while True:
+        try:
+            m=eval(input("escriba una matriz de numeros enteros "))
+            if type(m) is list:
+                for fila in m:
+                    if type(fila) is list:
+                        for entra in fila:
+                            if type(entra) is not int:
+                                raise Exception
+                    else:
+                        raise Exception
+            else:
+                raise Exception
+            for fil in m:
+                if len(fil)!=len(m[0]):
+                    raise Exception
+            break
+        except:
+            print("debe ser una matriz de enteros, las filas deben ser todas del mismo tamaño")
+    return m
