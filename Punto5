@@ -1,0 +1,27 @@
+###punto 5
+x=input("escriba un numero entero")
+y=list(x)
+cincos=[]
+i=0
+j=1
+k=0
+while j<len(y):
+    if y[i]=="5" and y[j]=="5":
+        cincos.append(y[i])
+        i+=1
+        j+=1
+    elif y[i]=="5" and y[j]!="5":
+        k+=1
+        i+=1
+        j+=1
+    else:
+        i+=1
+        j+=1
+if y[0]=="5" and y[1]!="5":
+    k-=1
+if y[len(y)-2]=="5" and y[len(y)-1]=="5":
+    k+=1
+for s in range (len(y)-2):
+    if y[s]!="5" and y[s+1]=="5" and y[s+2]!="5":
+        k-=1
+print("el numero",x," tiene ", len(cincos)+k," cincos consecutivos")
