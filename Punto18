@@ -1,0 +1,8 @@
+##punto18
+x=-1
+matriz=eval(input("escriba una matriz cuadrada")
+for d in range(0,len(matriz)):
+    x+=1
+    for s in range(1+x,len(lmatriz)):
+        matriz[s][d]=0
+print(matriz)
