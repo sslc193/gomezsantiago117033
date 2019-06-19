@@ -6,3 +6,15 @@ for d in range(0,len(matriz)):
     for s in range(1+x,len(lmatriz)):
         matriz[s][d]=0
 print(matriz)
+
+L2=[]
+for columna in range(0,len(L)):
+    c=0
+    for fila in range(0,len(L)):
+        if L[columna][fila]==1:
+            c+=1
+        else:
+            continue
+    L2.append(c)
+print('la matriz triangular superior es: ', L)
+print('La fila con mayor cantidad de unos es: ', L[L2[max(L2)]])
